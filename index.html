@@ -59,6 +59,7 @@
             background-color: #1d1914;
             transform: translateY(-50%);
         }
+        
 
         .hero-section-heading {
             color: #f3f3f3;
@@ -239,6 +240,31 @@
             margin:40px auto;
         }
         }
+        .contact-location{
+            position: relative;
+        }
+        .contact-details{
+            top:50%;
+            left:0%;
+            width: 30%;
+            padding: 1.5rem;
+            padding-left: 3rem;
+            background-color: #1d1914;
+            transform: translateY(-50%);
+        }
+        iframe{
+            height:570px !important;
+        }
+        @media (max-width:576px){
+            iframe{
+            height:370px !important;
+        } 
+        .contact-details{
+            width: 35%;
+            padding: .5rem;
+            padding-left: 1.5rem;
+        }
+        }
     </style>
 </head>
 
@@ -348,6 +374,22 @@
                         <button class="btn hero-button btn-outline-light btn-dark px-5 rounded-0">Expolre Now</button>
                     </div>
                     <div class="overlay"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact-us mt-5 mb-5">
+        <div class="container">
+            <div class="row d-flex justify-content-end position-relative">
+                <div class="col-md-11 col-11">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3577.407533863081!2d72.99926197435104!3d26.280885486959278!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39418d42993b89af%3A0xa71b8c42bcfcf71a!2sGRID%20CODE%20MEDIA!5e0!3m2!1sen!2sin!4v1682668646277!5m2!1sen!2sin" width="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="contact-details text-white position-absolute">
+                    <h1 class="hero-section-heading mb-3">CONTACT US</h1>
+                    <div></div>
+                    <p class="hero-section-para contact-location d-flex gap-3"><i class="fa-solid fa-location-dot pt-2"></i><span>p.no. 825, 7th, Chopasani Rd, near Dalda Building, Satdarpura, Pratap Nagar, Jodhpur, Rajasthan 342001</span></p>
+                    <p class="hero-section-para contact-location d-flex gap-3"><i class="fa-solid fa-phone pt-2"></i>+91-345***666*</span></p>
+                    <p class="hero-section-para contact-location d-flex gap-3"><i class="fa-solid fa-envelope pt-2"></i><span>test@testmail.com</span></p>
                 </div>
             </div>
         </div>
