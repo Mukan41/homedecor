@@ -204,6 +204,10 @@
         .footer-content h5 {
             color: #b3b3b3;
         }
+        .footer-content p{
+            line-height: 120%;
+            font-size: .9rem;
+        }
 
         .decor-links li {
             list-style: none;
@@ -247,9 +251,7 @@
             scale: 1.01;
         }
         @media (max-width:992px){
-            :root {
-                font-size: 14px !important;
-            }
+            
             .black-left-box {
                 width: 46%;
                 padding: 1rem;
@@ -257,6 +259,15 @@
             }
             .hero-section-heading {
                 line-height: 105%;
+            }
+            iframe {
+                height: 480px !important;
+            }
+
+            .contact-details {
+                width: 45%;
+                padding: 1rem;
+                padding-left: 2rem;
             }
         }
 
@@ -296,9 +307,25 @@
                 margin: 10px auto;
             }
             .explore-content {
-                margin: 75px auto;
+                margin: 85px auto;
+            }
+            iframe {
+                height: 430px !important;
             }
 
+            .contact-details {
+                width: 48%;
+                padding: 1rem;
+                padding-left: 2rem;
+            }
+            .footer-logo {
+                max-width: 75%
+            }
+
+            .decore-footer-content {
+                padding-top: 0 !important;
+                padding-bottom: 0 !important;
+            }
         }
         @media (max-width:576px) {
             :root {
@@ -382,7 +409,7 @@
             }
 
             .explore-content {
-                margin: 40px auto;
+                margin: 47px auto;
             }
 
             iframe {
@@ -436,7 +463,7 @@
             </div>
         </nav>
     </header>
-    <!-- <section class="hero-section">
+    <section class="hero-section">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-sm-10 mx-auto position-relative">
@@ -451,9 +478,9 @@
                 </div>
             </div>
         </div>
-    </section> -->
+    </section>
 
-    <!-- <section class="highlight">
+    <section class="highlight">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12 highlight-background">
@@ -470,9 +497,9 @@
                 </div>
             </div>
         </div>
-    </section> -->
+    </section>
     
-    <!-- <section class="highlight-items  mt-5 mb-5">
+    <section class="highlight-items  mt-5 mb-5">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12 d-flex flex-column justify-content-end">
@@ -504,7 +531,7 @@
                 </div>
             </div>
         </div>
-    </section> -->
+    </section>
 
 
     <section class="explore mt-5">
@@ -522,7 +549,7 @@
     </section>
 
 
-    <!-- <section class="contact-us mt-5 mb-5">
+    <section class="contact-us mt-5 mb-5">
         <div class="container">
             <div class="row d-flex justify-content-end position-relative">
                 <div class="col-md-11 col-11">
@@ -544,25 +571,25 @@
                 </div>
             </div>
         </div>
-    </section> -->
+    </section>
 
 
-    <!-- <footer>
+    <footer>
         <div class="container-fluid footer-content">
             <div class="row d-flex justify-content-center py-5 flex-wrap  position-relative">
                 <div class="overlay-footer"></div>
                 <div
-                    class="col-sm-12 col-11 mx-auto decore-footer-content d-flex justify-content-between py-5 flex-wrap">
-                    <div class="col-sm-2 footer-logo my-2">
+                    class="col-sm-12 col-11 mx-auto decore-footer-content d-flex justify-content-between py-5 flex-wrap ">
+                    <div class="col-lg-2 col-md-2 col-sm-4  footer-logo my-2">
                         <img src="./assets/images/logo.png" alt="" class="img-fluid">
                     </div>
-                    <div class="col-sm-3 company-info my-2  pe-5">
+                    <div class="col-lg-3 col-md-3 col-sm-7 company-info my-2  pe-2">
                         <h5>INFO</h5>
                         <p>Our company is a professional service provider that specializes in helping clients decorate
                             and design their homes. We offer a range of services, from simple consultations to
                             full-scale interior design and decorating services.</p>
                     </div>
-                    <div class="col-sm-1 decor-links my-2">
+                    <div class="col-lg-1 col-md-1 col-sm-4 decor-links my-2">
                         <h5>LINKS</h5>
                         <ul class="p-0">
                             <li><a href="#">Home</a></li>
@@ -571,12 +598,12 @@
                             <li><a href="#">Contact Us</a></li>
                         </ul>
                     </div>
-                    <div class="col-sm-3 address pe-5 my-2">
+                    <div class="col-lg-4 col-md-3 col-sm-4 address pe-2 my-2">
                         <h5>ADDRESS</h5>
                         <p>p.no. 825, 7th, Chopasani Rd, near Dalda Building, Satdarpura, Pratap Nagar, Jodhpur,
                             Rajasthan 342001</p>
                     </div>
-                    <div class="col-sm-2 contact-us-social my-2">
+                    <div class="col-lg-2 col-md-3 col-sm-4 contact-us-social my-2">
                         <h5>CONTACT</h5>
                         <a class="hero-section-para contact-location d-flex gap-3" href="#"><i
                                 class="fa-solid fa-envelope pt-2"></i><span>test@testmail.com</span></a>
@@ -587,7 +614,7 @@
                 </div>
             </div>
         </div>
-    </footer> -->
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
