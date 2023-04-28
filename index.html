@@ -18,6 +18,12 @@
             --fontcolor: #c7c8ca;
         }
 
+        .hero-button {
+            background-color: transparent;
+        }
+
+        /* ---- header section css --- */
+
         .navbar-logo {
             width: 120px;
         }
@@ -45,10 +51,10 @@
         }
 
 
+        /* ---- hero section css --- */
 
         .hero-image {
             width: 90%;
-            /* max-height:80%; */
             float: right;
         }
 
@@ -77,14 +83,9 @@
             z-index: -2;
         }
 
-        .hero-button {
-            background-color: transparent;
-        }
 
 
-
-
-
+        /* --- highlight section --- */
 
         .highlight-background {
             background: url("assets/images/highlightimg.jpg");
@@ -117,65 +118,8 @@
             z-index: 2;
         }
 
-        @media (max-width:576px) {
-            .hero-image {
-                width: 100%;
-                max-height: 80%;
-                float: left;
-            }
 
-            .black-left-box {
-                width: 70%;
-                padding: .5rem;
-                padding-left: 1.5rem;
-                top: 92% !important;
-                left: 50%;
-                transform: translate(-50%, -80%);
-            }
-
-            .hero-section-heading {
-                font-size: 1.5em;
-                line-height: 95%;
-            }
-
-            .hero-section-para {
-                font-size: .8em;
-                margin-bottom: .5rem;
-            }
-
-            .hero-button {
-                font-size: .7em;
-                padding-top: .2rem;
-                padding-bottom: .2rem;
-                padding-left: 1.8rem !important;
-                padding-right: 1.8rem !important;
-            }
-
-            .hero-section-background-outline {
-                border: 1px solid #1d19149e;
-                left: 8%;
-                top: 62%;
-                height: 30%;
-                z-index: -2;
-            }
-
-            :root {
-                font-size: 12px;
-            }
-
-            .highlight-background {
-                margin: 50px auto;
-            }
-
-            .highlight-content {
-                margin: 25px auto;
-            }
-
-            .highlight-background p {
-                line-height: 110%;
-            }
-        }
-
+        /* --- highlight-items section css --- */
 
         .highlight-items {
             color: #1d1914;
@@ -208,7 +152,7 @@
         }
 
 
-
+        /* --- explore section css--- */
 
         .explore-background {
             background: url("assets/images/explorebg.jpg");
@@ -225,35 +169,7 @@
             margin: 120px auto;
         }
 
-        @media (max-width:576px) {
-            .decor-item-border-box {
-                height: 80%;
-                top: 10% !important;
-                left: 8%;
-            }
-
-            .highlight-items {
-                margin-top: 10px !important;
-            }
-
-            .highlight-item-heading::after {
-                width: 60%;
-            }
-
-            .decorative-items {
-                margin-top: 0rem;
-            }
-
-            .explore-background {
-                margin: 0px auto;
-                ;
-            }
-
-            .explore-content {
-                margin: 40px auto;
-            }
-        }
-
+        /* --- contact section css --- */
         .contact-location {
             position: relative;
         }
@@ -272,17 +188,7 @@
             height: 570px !important;
         }
 
-        @media (max-width:576px) {
-            iframe {
-                height: 370px !important;
-            }
-
-            .contact-details {
-                width: 35%;
-                padding: .5rem;
-                padding-left: 1.5rem;
-            }
-        }
+        /* --- footer section css --- */
 
         .footer-content {
             background: url("assets/images/footerbg.jpg");
@@ -340,8 +246,155 @@
             text-shadow: 1px 1px 1px rgb(0, 139, 12);
             scale: 1.01;
         }
+        @media (max-width:992px){
+            :root {
+                font-size: 14px !important;
+            }
+            .black-left-box {
+                width: 46%;
+                padding: 1rem;
+                padding-left: 2rem;
+            }
+            .hero-section-heading {
+                line-height: 105%;
+            }
+        }
 
+        @media (max-width:768px){
+            .highlight-background {
+                margin: 65px auto;
+            }
+
+            .highlight-content {
+                margin:75px auto;
+            }
+
+            .highlight-background p {
+                line-height: 115%;
+            }
+            
+
+            .decor-item-border-box {
+                height: 80%;
+                top: 10% !important;
+                left: 8%;
+            }
+
+            .highlight-items {
+                margin-top: 20px !important;
+            }
+
+            .highlight-item-heading::after {
+                width: 65%;
+            }
+
+            .decorative-items {
+                margin-top: 1rem;
+            }
+
+            .explore-background {
+                margin: 10px auto;
+            }
+            .explore-content {
+                margin: 75px auto;
+            }
+
+        }
         @media (max-width:576px) {
+            :root {
+                font-size: 12px;
+            }
+
+            .hero-image {
+                width: 100%;
+                max-height: 80%;
+                float: left;
+            }
+
+            .black-left-box {
+                width: 70%;
+                padding: .5rem;
+                padding-left: 1.5rem;
+                top: 92% !important;
+                left: 50%;
+                transform: translate(-50%, -80%);
+            }
+
+            .hero-section-heading {
+                font-size: 1.5em;
+                line-height: 95%;
+            }
+
+            .hero-section-para {
+                font-size: .8em;
+                margin-bottom: .5rem;
+            }
+
+            .hero-button {
+                font-size: .7em;
+                padding-top: .2rem;
+                padding-bottom: .2rem;
+                padding-left: 1.8rem !important;
+                padding-right: 1.8rem !important;
+            }
+
+            .hero-section-background-outline {
+                border: 1px solid #1d19149e;
+                left: 8%;
+                top: 62%;
+                height: 30%;
+                z-index: -2;
+            }
+
+            .highlight-background {
+                margin: 50px auto;
+            }
+
+            .highlight-content {
+                margin: 25px auto;
+            }
+
+            .highlight-background p {
+                line-height: 110%;
+            }
+
+            .decor-item-border-box {
+                height: 80%;
+                top: 10% !important;
+                left: 8%;
+            }
+
+            .highlight-items {
+                margin-top: 10px !important;
+            }
+
+            .highlight-item-heading::after {
+                width: 60%;
+            }
+
+            .decorative-items {
+                margin-top: 0rem;
+            }
+
+            .explore-background {
+                margin: 0px auto;
+                ;
+            }
+
+            .explore-content {
+                margin: 40px auto;
+            }
+
+            iframe {
+                height: 370px !important;
+            }
+
+            .contact-details {
+                width: 35%;
+                padding: .5rem;
+                padding-left: 1.5rem;
+            }
+
             .footer-logo {
                 max-width: 50%
             }
@@ -383,10 +436,10 @@
             </div>
         </nav>
     </header>
-    <section class="hero-section">
-        <div class="container">
+    <!-- <section class="hero-section">
+        <div class="container-fluid">
             <div class="row">
-                <div class="col-sm-12 mx-auto position-relative">
+                <div class="col-sm-10 mx-auto position-relative">
                     <img src="./assets/images/herobg.png" alt="" class="hero-image">
                     <div class="black-left-box text-white bg-dark position-absolute top-50 left-0">
                         <h1 class="hero-section-heading">Lorem ipsum sit<br> dolor amet</h1>
@@ -398,14 +451,15 @@
                 </div>
             </div>
         </div>
-    </section>
-    <section class="highlight">
+    </section> -->
+
+    <!-- <section class="highlight">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12 highlight-background">
                     <div class="overlay"></div>
                     <div
-                        class="col-md-5 col-9 highlight-content p-4 d-flex justify-content-center align-items-center flex-column">
+                        class="col-md-6 col-sm-7 col-9 highlight-content p-4 d-flex justify-content-center align-items-center flex-column">
                         <h1>O HAC</h1>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt cupiditate, deleniti
                             reiciendis laborum recusandae eligendi. Lorem ipsum dolor sit amet consectetur adipisicing
@@ -416,8 +470,9 @@
                 </div>
             </div>
         </div>
-    </section>
-    <section class="highlight-items  mt-5 mb-5">
+    </section> -->
+    
+    <!-- <section class="highlight-items  mt-5 mb-5">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12 d-flex flex-column justify-content-end">
@@ -425,20 +480,20 @@
                         <h1 class="highlight-item-heading ">DECORATION</h1>
                     </div>
                     <div class="container decorative-items">
-                        <div class="row position-relative d-flex flex-wrap">
-                            <div class="col-md-3 p-3 decorative-items-list">
+                        <div class="row position-relative d-flex flex-wrap flex-row">
+                            <div class="col-md-3 col-sm-6 p-3 decorative-items-list">
                                 <img src="./assets/images/1.jpg" alt="" class="img-fluid">
                                 <h3 class="text-center">Decor 01</h3>
                             </div>
-                            <div class="col-md-3 p-3 decorative-items-list">
+                            <div class="col-md-3 col-sm-6 p-3 decorative-items-list">
                                 <h3 class="text-center">Decor 02</h3>
                                 <img src="./assets/images/2.jpg" alt="" class="img-fluid">
                             </div>
-                            <div class="col-md-3 p-3 decorative-items-list">
+                            <div class="col-md-3 col-sm-6 p-3 decorative-items-list">
                                 <img src="./assets/images/3.jpg" alt="" class="img-fluid">
                                 <h3 class="text-center">Decor 03</h3>
                             </div>
-                            <div class="col-md-3 p-3 decorative-items-list">
+                            <div class="col-md-3 col-sm-6 p-3 decorative-items-list">
                                 <h3 class="text-center">Decor 04</h3>
                                 <img src="./assets/images/4.jpg" alt="" class="img-fluid">
                             </div>
@@ -449,12 +504,14 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
+
+
     <section class="explore mt-5">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12 explore-background position-relative d-flex justify-content-center ">
-                    <div class="col-md-4 explore-content text-center">
+                    <div class="col-md-6 explore-content text-center">
                         <h2 class="mb-4">OUR DECORATIVE ITEMS</h2>
                         <button class="btn hero-button btn-outline-light btn-dark px-5 rounded-0">Expolre Now</button>
                     </div>
@@ -463,7 +520,9 @@
             </div>
         </div>
     </section>
-    <section class="contact-us mt-5 mb-5">
+
+
+    <!-- <section class="contact-us mt-5 mb-5">
         <div class="container">
             <div class="row d-flex justify-content-end position-relative">
                 <div class="col-md-11 col-11">
@@ -485,8 +544,10 @@
                 </div>
             </div>
         </div>
-    </section>
-    <footer>
+    </section> -->
+
+
+    <!-- <footer>
         <div class="container-fluid footer-content">
             <div class="row d-flex justify-content-center py-5 flex-wrap  position-relative">
                 <div class="overlay-footer"></div>
@@ -526,7 +587,7 @@
                 </div>
             </div>
         </div>
-    </footer>
+    </footer> -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
