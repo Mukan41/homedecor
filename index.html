@@ -106,7 +106,17 @@
         .highlight-background p {
             line-height: 135%;
         }
-
+        .overlay-highlight {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.8);
+            z-index: 2;
+        }
         .overlay {
             position: absolute;
             width: 100%;
@@ -124,6 +134,7 @@
 
         .highlight-items {
             color: #1d1914;
+            margin-top: 70px;
         }
 
         .highlight-item-heading {
@@ -167,7 +178,7 @@
             position: inherit;
             color: #f3f3f3;
             z-index: 4;
-            margin: 120px auto;
+            margin: 180px auto;
         }
 
         /* --- contact section css --- */
@@ -220,8 +231,7 @@
         }
 
         .decor-links a:hover {
-            text-shadow: 1px 1px 1px rgb(0, 139, 12);
-            scale: 1.01;
+            text-shadow: 0px 0px 1.3px rgb(255, 255, 255);
         }
 
         .decore-footer-content {
@@ -248,7 +258,7 @@
         }
 
         .contact-us-social a:hover {
-            text-shadow: 1px 1px 1px rgb(0, 139, 12);
+            text-shadow: 0px 0px 1px rgb(255, 255, 255);
             scale: 1.01;
         }
         @media (max-width:992px){
@@ -263,6 +273,12 @@
             }
             iframe {
                 height: 480px !important;
+            }
+            .highlight-items {
+                margin-top: 50px !important;
+            }
+            .explore-content {
+                margin: 150px auto;
             }
 
             .contact-details {
@@ -293,7 +309,7 @@
             }
 
             .highlight-items {
-                margin-top: 20px !important;
+                margin-top: 30px !important;
             }
 
             .highlight-item-heading::after {
@@ -308,7 +324,7 @@
                 margin: 10px auto;
             }
             .explore-content {
-                margin: 85px auto;
+                margin: 100px auto;
             }
             iframe {
                 height: 430px !important;
@@ -410,7 +426,7 @@
             }
 
             .explore-content {
-                margin: 47px auto;
+                margin:70px auto;
             }
 
             iframe {
@@ -467,7 +483,7 @@
     <section class="hero-section">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-sm-10 mx-auto position-relative">
+                <div class="col-sm-10 mx-auto position-relative mb-5">
                     <img src="./assets/images/herobg.png" alt="" class="hero-image">
                     <div class="black-left-box text-white position-absolute top-50 left-0">
                         <h1 class="hero-section-heading">Lorem ipsum sit<br> dolor amet</h1>
@@ -481,11 +497,11 @@
         </div>
     </section>
 
-    <section class="highlight">
+    <!-- <section class="highlight">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12 highlight-background">
-                    <div class="overlay"></div>
+                    <div class="overlay-highlight"></div>
                     <div
                         class="col-md-6 col-sm-7 col-9 highlight-content p-4 d-flex justify-content-center align-items-center flex-column">
                         <h1>O HAC</h1>
@@ -498,13 +514,13 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     
-    <section class="highlight-items  mt-5 mb-5">
+    <section class="highlight-items mb-5">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12 d-flex flex-column justify-content-end">
-                    <div class="col-md-12 col-12 mb-4 ">
+                    <div class="col-md-12 col-12">
                         <h1 class="highlight-item-heading ">DECORATION</h1>
                     </div>
                     <div class="container decorative-items">
