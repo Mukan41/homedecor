@@ -21,7 +21,8 @@
         .navbar-logo {
             width: 120px;
         }
-        .navbar-light{
+
+        .navbar-light {
             background-color: #ffffff;
         }
 
@@ -34,12 +35,17 @@
             padding-left: 1.5rem !important;
             color: var(--primarycolor);
         }
-        .addtocart{
+
+        .addtocart {
             color: var(--primarycolor);
         }
-        .addtocart:hover{
-            color:#262626;
+
+        .addtocart:hover {
+            color: #262626;
         }
+
+
+
         .hero-image {
             width: 90%;
             /* max-height:80%; */
@@ -47,6 +53,7 @@
         }
 
         .black-left-box {
+            width: 30%;
             padding: 2rem;
             padding-left: 4rem;
             background-color: #1d1914;
@@ -68,51 +75,170 @@
             height: 30%;
             z-index: -2;
         }
+
+
+
+
+
+
+        .highlight-background {
+            background: url("assets/images/highlightimg.jpg");
+            background-size: cover;
+            background-blend-mode: color-burn;
+            position: relative;
+            margin: 100px auto;
+        }
+
+        .highlight-content {
+            margin: 160px auto;
+            color: #f3f3f3;
+            position: inherit;
+            z-index: 3;
+        }
+        .highlight-background p{
+                line-height: 115%;
+            }
+
+        .overlay {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.6);
+            z-index: 2;
+        }
+
+        @media (max-width:576px) {
+            .hero-image {
+                width: 100%;
+                max-height: 80%;
+                float: left;
+            }
+
+            .black-left-box {
+                width: 70%;
+                padding: .5rem;
+                padding-left: 1.5rem;
+                top: 92% !important;
+                left: 50%;
+                transform: translate(-50%, -80%);
+            }
+
+            .hero-section-heading {
+                font-size: 1.5em;
+                line-height: 95%;
+            }
+
+            .hero-section-para {
+                font-size: .8em;
+                margin-bottom: .5rem;
+            }
+
+            .hero-button {
+                font-size: .7em;
+                padding-top: .2rem;
+                padding-bottom: .2rem;
+                padding-left: 1.8rem !important;
+                padding-right: 1.8rem !important;
+            }
+
+            .hero-section-background-outline {
+                border: 1px solid #1d19149e;
+                left: 8%;
+                top: 62%;
+                height: 30%;
+                z-index: -2;
+            }
+
+            :root{
+                font-size: 12px;
+            }
+            .highlight-background {
+                margin: 50px auto;
+            }
+
+            .highlight-content {
+                margin: 25px auto;
+            }
+            .highlight-background p{
+                line-height: 110%;
+            }
+        }
     </style>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light px-5">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img class="navbar-logo" src="./assets/images/pngwing.com.png" alt=""></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse navbar-right" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Product</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
-                    </li>
-                </ul>
-                <a href="#" class="addtocart"><i class="fa-solid fa-cart-shopping"></i></a>
-            </div>
-        </div>
-    </nav>
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12 position-relative">
-                <img src="./assets/images/Untitled design.png" alt="" class="hero-image">
-                <div class="black-left-box text-white bg-dark position-absolute top-50 left-0">
-                    <h1 class="hero-section-heading">Lorem ipsum sit<br> dolor amet</h1>
-                    <p class="hero-section-para">Lorem ipsum dolor sit amet.</p>
-                    <button class="btn btn-outline-light btn-dark px-5 rounded-0">Get More</button>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light px-5">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img class="navbar-logo" src="./assets/images/pngwing.com.png"
+                        alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse navbar-right" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Product</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                    <a href="#" class="addtocart"><i class="fa-solid fa-cart-shopping"></i></a>
                 </div>
-                <div class="col-sm-5 hero-section-background-outline position-absolute"></div>
+            </div>
+        </nav>
+    </header>
+    <section class="hero-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 mx-auto position-relative">
+                    <img src="./assets/images/Untitled design.png" alt="" class="hero-image">
+                    <div class="black-left-box text-white bg-dark position-absolute top-50 left-0">
+                        <h1 class="hero-section-heading">Lorem ipsum sit<br> dolor amet</h1>
+                        <p class="hero-section-para">Lorem ipsum dolor sit amet.Lorem ipsum dolor sit ametLorem ipsum
+                            dolor sit amet</p>
+                        <button class="btn hero-button btn-outline-light btn-dark px-5 rounded-0">Get More</button>
+                    </div>
+                    <div class="col-sm-5 col-10 hero-section-background-outline position-absolute"></div>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
+    <section class="highlight">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 highlight-background">
+                    <div class="overlay"></div>
+                    <div
+                        class="col-md-5 col-9 highlight-content p-4 d-flex justify-content-center align-items-center flex-column">
+                        <h1>O HAC</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt cupiditate, deleniti
+                            reiciendis laborum recusandae eligendi. Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Eaque omnis dignissimos recusandae sint aspernatur hic. Lorem ipsum dolor sit, amet
+                            consectetur adipisicing elit. Unde, aut! Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Iure, esse!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
