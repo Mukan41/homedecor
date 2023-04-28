@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        :root {
+            --primarycolor: #1d1914;
+            --secondarycolor: #a6b7c3;
+            --backgroundcolor: #e5eaee;
+            --color: #f3f3f3;
+            --fontcolor: #c7c8ca;
+        }
+
+        .navbar-logo {
+            width: 120px;
+        }
+        .navbar-light{
+            background-color: #ffffff;
+        }
+
+        .navbar-right {
+            justify-content: end;
+        }
+
+        .nav-link {
+            padding-right: 1.5rem !important;
+            padding-left: 1.5rem !important;
+            color: var(--primarycolor);
+        }
+        .addtocart{
+            color: var(--primarycolor);
+        }
+        .addtocart:hover{
+            color:#262626;
+        }
+        .hero-image {
+            width: 90%;
+            /* max-height:80%; */
+            float: right;
+        }
+
+        .black-left-box {
+            padding: 2rem;
+            padding-left: 4rem;
+            background-color: #1d1914;
+            transform: translateY(-50%);
+        }
+
+        .hero-section-heading {
+            color: #f3f3f3;
+        }
+
+        .hero-section-para {
+            color: #c7c8ca;
+        }
+
+        .hero-section-background-outline {
+            border: 1px solid #1d19149e;
+            left: 62%;
+            top: 78%;
+            height: 30%;
+            z-index: -2;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light px-5">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img class="navbar-logo" src="./assets/images/pngwing.com.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse navbar-right" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Product</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+                <a href="#" class="addtocart"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 position-relative">
+                <img src="./assets/images/Untitled design.png" alt="" class="hero-image">
+                <div class="black-left-box text-white bg-dark position-absolute top-50 left-0">
+                    <h1 class="hero-section-heading">Lorem ipsum sit<br> dolor amet</h1>
+                    <p class="hero-section-para">Lorem ipsum dolor sit amet.</p>
+                    <button class="btn btn-outline-light btn-dark px-5 rounded-0">Get More</button>
+                </div>
+                <div class="col-sm-5 hero-section-background-outline position-absolute"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+
+</html>
